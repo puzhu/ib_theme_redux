@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://tf-illustratedbytes.netlify.app/"
+baseURL = "https://ib-theme-sample.netlify.app/"
 title = "Illustrated Bytes"
 theme = "illustrated-bytes"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
