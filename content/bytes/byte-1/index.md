@@ -1,7 +1,7 @@
 ---
 title: "Improve performance by reducing data movement over the network"
 date: 2021-09-05T12:27:11+06:00
-image: "assets/petabyte.gif"
+image: "assets/fn_anatomy_1.gif"
 # description
 description: "This is meta description"
 tags: ["optimized"]
