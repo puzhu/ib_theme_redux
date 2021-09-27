@@ -11,4 +11,4 @@ draft: false
 
 All the features that we have discussed in the previous posts would already make Kinetica standout in terms of performance. But why stop here! 😄
 
-There are two further optimizations that are worth noting.
+There are two further optimizations that are worth noting
