@@ -1,9 +1,10 @@
 ---
 title: "Improve performance by reducing data movement over the network"
 date: 2021-09-05T12:27:11+06:00
-image: "data-distribution.gif"
+image: "assets/oltp.gif"
 # description
 description: "This is meta description"
+excerpt: "This is just a sample excerpt that gives a quick introduction to this post"
 tags: ["optimized"]
 draft: false
 ---
