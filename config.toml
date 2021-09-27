@@ -1,0 +1,139 @@
+######################## default configuration ####################
+baseURL = "https://tf-illustratedbytes.netlify.app/"
+title = "Illustrated Bytes"
+theme = "illustrated-bytes"
+# Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
+timeZone = "UTC"
+# post pagination
+paginate = "6" # see https://gohugo.io/extras/pagination/
+# post excerpt
+summaryLength = "10" # see https://gohugo.io/content-management/excerpts/
+# google analytics
+googleAnalytics = "" # example: UA-123-45, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
+# disqus short name
+disqusShortname = "themefisher-template" # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
+# disable language
+disableLanguages = [] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
+
+############################# Modules ##############################
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.87.0"
+
+############################# Outputs ##############################
+[outputs]
+home = ["HTML", "RSS", "JSON", "WebAppManifest"]
+
+############################# Imaging ##############################
+[imaging]
+# See https://github.com/disintegration/imaging
+# Default JPEG or WebP quality setting. Default is 75.
+quality = 90
+
+############################# Caches ###############################
+[caches]
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+
+############################# Markup ###############################
+[markup]
+[markup.goldmark.renderer]
+unsafe= true
+
+[markup.highlight]
+style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
+
+
+############################ Media types ############################
+[mediaTypes]
+[mediaTypes."application/manifest+json"]
+suffixes = ["webmanifest"]
+
+[mediaTypes."text/netlify"]
+delimiter = ""
+suffixes = [""]
+
+
+############################ Output Format ###########################
+[outputFormats]
+[outputFormats.WebAppManifest]
+mediaType = "application/manifest+json"
+rel = "manifest"
+
+
+######################### site variables ##############################
+# customize your color and font from here.
+[params.variables]
+color_primary = "#feaf48"
+gradient_primary = "linear-gradient(to right, #ff7755, #feaa4a)"
+body_color = "#fff"
+text_color = "#404040"
+text_dark = "#233044"
+text_light = "#959595"
+border_color = "#c2c5d5"
+black = "#000"
+white = "#fff"
+light = "#fdfdfd"
+
+# font variables
+# base font size for full website, 
+font_size = "16px" # default is 16px
+
+# Font Scale Sizes
+# "minorSecond": 1.067,
+# "majorSecond": 1.125,
+# "minorThird": 1.2,
+# "majorThird": 1.25,
+# "perfectFourth": 1.333,
+# "augmentedFourth": 1.414,
+# "perfectFifth": 1.5,
+# "goldenRatio": 1.618
+font_scale = "1.25" # default is "majorThird": 1.25
+
+# go to https://fonts.google.com/ to find the font you want to use. select your font and copy only the bold part from the URL. and paste it here.
+# example: "Work+Sans:wght@400;500;600"
+font_primary = "Poppins:wght@400;500;700"
+font_primary_type = "sans-serif" # [serif/sans-serif]
+font_secondary = "Kaisei+Tokumin"
+font_secondary_type = "serif" # [serif/sans-serif]
+font_icon = "Font Awesome 5 Free" # https://fontawesome.com/v5.15/icons/
+
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/font-awesome/fontawesome.min.css"
+[[params.plugins.css]]
+link = "plugins/font-awesome/brands.css"
+# [[params.plugins.css]]
+# link = "plugins/font-awesome/solid.css"
+[[params.plugins.css]]
+link = "plugins/search/auto-complete.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jquery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/masonry/masonry.min.js"
+[[params.plugins.js]]
+link = "plugins/webfont-loader/webfont-loader-2.min.js"
+[[params.plugins.js]]
+link = "plugins/search/auto-complete.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+[[params.plugins.js]]
+link = "plugins/search/lunr.min.js"
